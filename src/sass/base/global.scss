@@ -1,0 +1,221 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.menusContainer {
+    color: #000;
+    font-size: 2.5vh;
+    width: 38vw;
+    height: 100vh;
+    background: #ffb23f;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    transform: skew(20deg) translate(-15vw);
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex: 1;
+    z-index: 0;
+    padding: 0 0 0 20vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.menusList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    transform: skew(-20deg) translate(15vw);
+}
+
+.menu {
+    margin: 3vh 2vw;
+    display: flex;
+    justify-content: left;
+    box-sizing: content-box;
+    color: white;
+    opacity: 0.6;
+    font-size: 20px;
+    transform: scale(1);
+    transform-origin: left center;
+    transition: opacity 0.5s ease transform 0.5 ease; 
+
+    &--selected {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
+
+.groupFrom {
+    font-size: 1.75vh;
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+.topContainer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    transform: skew(20deg);
+}
+
+.sections {
+    display: flex;
+    flex: 1;
+    margin-top: 10vh;
+    flex-direction: row;border:2px solid blue;
+    overflow: hidden;
+}
+
+.festivalInfos {
+    transform: skew(-20deg);
+    width: fit-content;
+    color: #ffb23f;
+}
+
+.festivalName {
+    display: flex;
+    font-size: 5vh;
+    font-weight: 500;
+    border-bottom: 1px solid #ffb23f;
+}
+
+.festivalDates {
+    letter-spacing: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.dates {
+    width: 15vw;
+    height: 16vw;
+    border-radius: 100px;
+    display: flex;
+    margin: 2vh 0 0 6vw;
+    transform: rotate(-20deg);
+    box-sizing: border-box;
+    border: 3px solid darken($color: #ffb23f, $amount: 25%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2% 0;
+    background: #ffb23f;
+    color: white;
+    box-shadow: 2px 2px 16px rgba(0,0,0,0.25);
+}
+
+.month {
+    font-size: 5vh;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(20deg);
+    box-sizing: border-box;
+}
+
+.day {
+    font-size: 1.5vh;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transform: rotate(20deg) translate(20px);
+    box-sizing: border-box;
+}
+
+.concertTime {
+    font-size: 1.5vh;
+    display: flex;
+    flex: 1;   
+    transform: rotate(20deg) translate(-25px);
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.groups {
+    transform: skew(20deg) translateX(10vw);
+    width: 60vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.banGroup {
+    height: 5vh;
+    width: 60vw;
+    background: #ffb23f;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.titleBanGroup {
+    transform: skew(-20deg);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 3vh;
+}
+
+.description {
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.textGroup {
+    flex: 1;
+    color: #000;border:1px solid red;
+    z-index: 1;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: skew(-20deg) translate(-50%);
+    }
+}
+
+.textGroup2 {
+    shape-outside: polygon();
+    transform: skew(-20deg);border:1px solid green;
+}
+
+.imgGroup {
+    width: 30vw;
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);    
+
+    img {
+        height: 35vh;
+        transform: skew(-20deg) translate(-5vw);
+        border-left: 1px solid transparent;
+    }
+}
