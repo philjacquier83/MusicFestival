@@ -1,0 +1,42 @@
+[
+    {
+        "id": "202506121900A",
+        "name": "The Harrold's Kids",
+        "country": "scotland",
+        "codeCountry": "SCO",
+        "description": {
+            "text1": "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+            "text2": "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+            "text3": "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+        },
+        "groupDate": {
+            "dayName": "Wednesday",
+            "month": "June",
+            "day": "12",
+            "hourStart": "7:00 pm",
+            "hourEnd": "9:00 pm",
+            "hour": "7:00 - 9:00 pm"
+        },
+        "groupImg": "/src/assets/Group1.png"
+    },
+    {
+        "id": "202506122100A",
+        "name": "Sons of Music",
+        "country": "great britain",
+        "codeCountry": "GBR",
+        "description": {
+            "text1": "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+            "text2": "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+            "text3": "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+        },
+        "groupDate": {
+            "dayName": "Wednesday",
+            "month": "June",
+            "day": "12",
+            "hourStart": "9:00 pm",
+            "hourEnd": "11:00 pm",
+            "hour": "9:00 - 11:00 pm"
+        },
+        "groupImg": "/src/assets/Group1.png"
+    }
+]

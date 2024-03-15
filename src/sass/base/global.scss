@@ -15,6 +15,7 @@
     position: fixed;
     top: 0;
     transform: skew(20deg) translate(-15vw);
+    border-right: 2px solid darken($color: #ffb23f, $amount: 25%);
 }
 
 .bodyContainer {
@@ -81,7 +82,7 @@
     display: flex;
     flex: 1;
     margin-top: 10vh;
-    flex-direction: row;border:2px solid blue;
+    flex-direction: row;
     overflow: hidden;
 }
 
@@ -95,7 +96,8 @@
     display: flex;
     font-size: 5vh;
     font-weight: 500;
-    border-bottom: 1px solid #ffb23f;
+    border-bottom: 1px solid darken($color: #ffb23f, $amount: 25%);
+    -webkit-text-stroke: 2px darken($color: #ffb23f, $amount: 25%);
 }
 
 .festivalDates {
@@ -104,6 +106,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 2vw;
+    -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
 }
 
 .dates {
@@ -132,6 +135,12 @@
     align-items: center;
     transform: rotate(20deg);
     box-sizing: border-box;
+    -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+
+    sup {
+        font-size: 3vh;
+    }
 }
 
 .day {
@@ -143,6 +152,7 @@
     flex: 1;
     transform: rotate(20deg) translate(20px);
     box-sizing: border-box;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 }
 
 .concertTime {
@@ -152,6 +162,7 @@
     transform: rotate(20deg) translate(-25px);
     box-sizing: border-box;
     align-items: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 }
 
 .groups {
@@ -165,6 +176,7 @@
     height: 5vh;
     width: 60vw;
     background: #ffb23f;
+    border: 2px solid darken($color: #ffb23f, $amount: 25%);
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -181,41 +193,50 @@
 }
 
 .description {
+    width: 60vw;
     padding: 10px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     box-sizing: border-box;
     position: relative;
+    
 }
 
 .textGroup {
     flex: 1;
-    color: #000;border:1px solid red;
+    color: #000;
     z-index: 1;
     position: relative;
+    padding-right: 60px;
+    box-sizing: border-box;
+    transform: skew(-20deg);
+}
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: skew(-20deg) translate(-50%);
-    }
+.shape {
+    width: 450px;
+    height: 200px;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    margin-top: 20px;
+    transform: skew(-20deg) translate(-120px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.25); 
 }
 
 .textGroup2 {
-    shape-outside: polygon();
-    transform: skew(-20deg);border:1px solid green;
+    margin: 20px 0 0 10px;
+    text-align: justify;
+    font-size: 16px;
+    transform: translate(-120px);
 }
 
 .imgGroup {
-    width: 30vw;
+    width: 450px;
     height: 35vh;
-    position: relative;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
     overflow: hidden;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);    
 
     img {
         height: 35vh;
-        transform: skew(-20deg) translate(-5vw);
         border-left: 1px solid transparent;
     }
 }

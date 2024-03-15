@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FestivalInfos } from '../assets/FestivalInfos'
 import '../sass/main.scss'
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
                     <div className={`menu ${menu === menuSelected && 'menu--selected'}`} key={`${menu}-${index}`} onClick={() => handleSelectMenu(menu)}>{menu}</div>
                 )}
                 </div>
-                </div>
+            </div>
 
             <div className="bodyContainer">
                 <div className="topContainer">
@@ -32,22 +33,35 @@ function Home() {
 
                 <div className="sections">
                     <div className="dates">
-                        <div className="day">WEDNESDAY</div>
-                        <div className="month">June</div>
-                        <div className="month">12th</div>
-                        <div className="concertTime">7:00 - 9:00 pm</div>
+                        <div className="day">{FestivalInfos[0].Artists[0].groupDate[0].dayName}</div>
+                        <div className="month">{FestivalInfos[0].Artists[0].groupDate[0].month}</div>
+                        <div className="month">{FestivalInfos[0].Artists[0].groupDate[0].day}<sup>th</sup></div>
+                        <div className="concertTime">{FestivalInfos[0].Artists[0].groupDate[0].hour}</div>
                     </div>
                     <div className="groups">
                         <div className="banGroup">
-                            <div className="titleBanGroup">The Harrold's Kids<span className="groupFrom">(SCO)</span></div>
+                            <div className="titleBanGroup">{FestivalInfos[0].Artists[0].name}<span className="groupFrom">({FestivalInfos[0].Artists[0].codeCountry})</span></div>
                         </div>
                         <div className="description">
-                            <div className="textGroup">
-                                <div className="textGroup2">Coming from Dundee (scotland), the Harrold's Kids formed in 1999. Dan Jackson and his friends...</div>
-                            </div>
-                            <div className="imgGroup">
+                            {/*<div className="imgGroup">
                                 <img src="/src/assets/Group1.png" />
+                </div>*/}
+                            <div className="shape">
+                                <div className="imgGroup">
+                                    <img src="/src/assets/Group1.png" />
+                                </div>
                             </div>
+                            <div className="textGroup">
+                                <p className="textGroup2">
+                                    {FestivalInfos[0].Artists[0].description[0].text1} 
+                                </p>
+                                <p className="textGroup2">        
+                                    {FestivalInfos[0].Artists[0].description[0].text2} 
+                                </p>
+                                <p className="textGroup2">
+                                    {FestivalInfos[0].Artists[0].description[0].text3}
+                                </p>
+                            </div>                     
                         </div>
                     </div>
                 </div>
