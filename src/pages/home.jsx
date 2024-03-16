@@ -1,66 +1,38 @@
-import { useState } from 'react'
-import { FestivalInfos } from '../assets/FestivalInfos'
+import MenusList from '../components/MenusList'
+import MainHeader from '../components/MainHeader'
 import '../sass/main.scss'
 
 function Home() {
-
-    const menus = ['Home', 'Program', 'Artists', 'Tickets', 'Edition 24', 'Crew', 'Become a Volunteer']
-    const [ menuSelected, setMenuSelected ] = useState('Home')
-
-    const handleSelectMenu = (changeMenu) => {
-        setMenuSelected(changeMenu)
-    }
-
+    
     return (
 
         <div className="mainContainer">
-            <div className="menusContainer">
-                <div className="menusList">
-                {menus.map((menu, index) => 
-                    <div className={`menu ${menu === menuSelected && 'menu--selected'}`} key={`${menu}-${index}`} onClick={() => handleSelectMenu(menu)}>{menu}</div>
-                )}
-                </div>
-            </div>
+            
+            <MenusList menuSelected="Home" />
 
             <div className="bodyContainer">
-                <div className="topContainer">
-                    <div className="festivalInfos">
-                        <div className="festivalName">SUNNY FESTIVAL '25</div>
-                        <div className="festivalDates">June 12th - 16th</div>
-                    </div>
-                    <div className="buyTickets"></div>
-                </div>
+                
+                <MainHeader />
 
-                <div className="sections">
-                    <div className="dates">
-                        <div className="day">{FestivalInfos[0].Artists[0].groupDate[0].dayName}</div>
-                        <div className="month">{FestivalInfos[0].Artists[0].groupDate[0].month}</div>
-                        <div className="month">{FestivalInfos[0].Artists[0].groupDate[0].day}<sup>th</sup></div>
-                        <div className="concertTime">{FestivalInfos[0].Artists[0].groupDate[0].hour}</div>
-                    </div>
-                    <div className="groups">
-                        <div className="banGroup">
-                            <div className="titleBanGroup">{FestivalInfos[0].Artists[0].name}<span className="groupFrom">({FestivalInfos[0].Artists[0].codeCountry})</span></div>
-                        </div>
-                        <div className="description">
-                            {/*<div className="imgGroup">
-                                <img src="/src/assets/Group1.png" />
-                </div>*/}
-                            <div className="shape">
+                <div className="sections sections--Presentation">
+                    
+                    <div className="shape"></div>
+                    <div className="presentation">
+                        <div className="ban">Welcome to the 7th edition !</div>
+                        
+                        <div className="blocPresentation">
+                            <div className="descriptionPresentation">
+                                
                                 <div className="imgGroup">
-                                    <img src="/src/assets/Group1.png" />
+                                    <img src="/src/assets/Crew1.png" />
                                 </div>
                             </div>
-                            <div className="textGroup">
-                                <p className="textGroup2">
-                                    {FestivalInfos[0].Artists[0].description[0].text1} 
-                                </p>
-                                <p className="textGroup2">        
-                                    {FestivalInfos[0].Artists[0].description[0].text2} 
-                                </p>
-                                <p className="textGroup2">
-                                    {FestivalInfos[0].Artists[0].description[0].text3}
-                                </p>
+                            <div className="textPresentation">
+                                    Welcome to the hottest event of the summer! <br /><br />
+                                    This summer, we're bringing you an electrifying lineup of chart-topping artists and legendary bands, promising non-stop music and unforgettable performances. 
+                                    From pulsating beats to soul-stirring melodies, our festival is the ultimate celebration of pop and rock music. <br /><br />
+                                    Join us under the stars for five days of pure musical bliss, surrounded by fellow music lovers and the vibrant energy of our festival grounds. With delicious food, refreshing drinks, and an atmosphere charged with excitement, this is an experience you won't want to miss. <br /><br />
+                                    Mark your calendars and get your tickets now for the highlight of the season !
                             </div>                     
                         </div>
                     </div>

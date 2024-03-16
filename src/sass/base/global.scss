@@ -84,6 +84,10 @@
     margin-top: 10vh;
     flex-direction: row;
     overflow: hidden;
+
+    &--Presentation {
+        justify-content: right;
+    }
 }
 
 .festivalInfos {
@@ -101,21 +105,21 @@
 }
 
 .festivalDates {
-    letter-spacing: 2vw;
+    letter-spacing: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2vw;
+    margin-left: 14px;
     -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
 }
 
 .dates {
-    width: 15vw;
-    height: 16vw;
+    width: 280px;
+    height: 280px;
     border-radius: 100px;
     display: flex;
-    margin: 2vh 0 0 6vw;
-    transform: rotate(-20deg);
+    margin: 70px 0 0 1vw;
+    transform: skew(-20deg) rotate(-20deg) translate(-35px, -70px);
     box-sizing: border-box;
     border: 3px solid darken($color: #ffb23f, $amount: 25%);
     flex-direction: column;
@@ -124,6 +128,7 @@
     padding: 2% 0;
     background: #ffb23f;
     color: white;
+    z-index: 2;
     box-shadow: 2px 2px 16px rgba(0,0,0,0.25);
 }
 
@@ -133,7 +138,6 @@
     flex: 2;
     justify-content: center;
     align-items: center;
-    transform: rotate(20deg);
     box-sizing: border-box;
     -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
     text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
@@ -150,7 +154,6 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    transform: rotate(20deg) translate(20px);
     box-sizing: border-box;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 }
@@ -159,22 +162,40 @@
     font-size: 1.5vh;
     display: flex;
     flex: 1;   
-    transform: rotate(20deg) translate(-25px);
     box-sizing: border-box;
     align-items: center;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 }
 
+.presentation {
+    width: 70vw;    
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.ban {
+    height: 5vh;
+    width: 100%;
+    background: #ffb23f;
+    border: 2px solid darken($color: #ffb23f, $amount: 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
 .groups {
-    transform: skew(20deg) translateX(10vw);
     width: 60vw;
     position: relative;
+    right: 0;
     overflow: hidden;
 }
 
 .banGroup {
     height: 5vh;
-    width: 60vw;
+    width: 100%;
     background: #ffb23f;
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
     display: flex;
@@ -183,9 +204,43 @@
     box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
 }
 
-.titleBanGroup {
+.blocPresentation {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.descriptionPresentation {
+    width: 400px;
+    display: flex;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.textPresentation {
+    color: #000;
+    flex: 1;
+    text-align: justify;
+    margin: 0 20px;
+}
+
+.title {
     transform: skew(-20deg);
-    width: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 3vh;
+}
+
+.titleBanGroup {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -203,30 +258,45 @@
     
 }
 
-.textGroup {
-    flex: 1;
-    color: #000;
-    z-index: 1;
-    position: relative;
-    padding-right: 60px;
-    box-sizing: border-box;
-    transform: skew(-20deg);
-}
-
 .shape {
-    width: 450px;
-    height: 200px;
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-    margin-top: 20px;
-    transform: skew(-20deg) translate(-120px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.25); 
+    width: 200px;
+    height: 85vh;
+    z-index: 1;
+    shape-outside: polygon(0 0, 0 100%, 100% 100%);
+    transform: skew(20deg) translate(160px);
+    background: rgb(250, 228, 186);
 }
 
-.textGroup2 {
-    margin: 20px 0 0 10px;
-    text-align: justify;
-    font-size: 16px;
-    transform: translate(-120px);
+.shape2 {
+    width: 400px;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    shape-outside: polygon(0 0, 0 100%, 100% 100%);
+    transform: skew(20deg) translate(160px);
+    background: rgb(250, 228, 186);
+}
+
+.shape3 {
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    float: left;
+    shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    height: 400px;
+    width: 146px;
+    transform: translate(35px);
+}
+
+.groupHour {
+    text-align: left;
+    height: 5vh;
+    vertical-align: auto;
+    transform: translate(40px);
+}
+
+.blocProgram {
+    margin-top: 40px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
 }
 
 .imgGroup {

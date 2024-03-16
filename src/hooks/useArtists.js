@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import FestivalInfos from '../assets/FestivalInfos.json'
+import Artists from '../assets/Artists.json'
 
 function useArtists() {
 
     const { id } = useParams()
     const navigate = useNavigate()
-
+console.log(id)
     const [ artists, setArtists ] = useState({
         id: "",
         name: "",
@@ -25,7 +25,7 @@ function useArtists() {
     })
 
     useEffect(() => {
-        const artist = FestivalInfos.find((elem) => elem.id === id)
+        const artist = Artists.find((elem) => elem.id === id)
         if(!artist) {
             navigate('/error')
         } else {
