@@ -27,30 +27,33 @@ function Programmation() {
                         </div>
                     </div>
 
-                    <div className="groups">
+                    
+                        
+                    <div className="shape3"></div>
+                    <div className="groups">    
                         <div className="banGroup">
                             <div className="titleBanGroup">{program.scene[0].sceneName}</div>
                         </div>
                         
-                        <div className="blocProgram">                           
-                            
-                            <div className="shape3"></div>
+                        <div className="blocProgram">                              
                                 {program.scene[0].groups.map((group, index) =>
                                     <div className="groupHour" key={`${group}-${index}`}>
                                         <Link to={`/artists/${group.groupId}`}>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
                                     </div>
                                 )}
+                        </div>
+                            
+                        <div className="banGroup">
+                            <div className="titleBanGroup">{program.scene[1].sceneName}</div>
+                        </div>
 
-                                <div className="banGroup">
-                                    <div className="titleBanGroup">{program.scene[1].sceneName}</div>
-                                </div>
-
+                        <div className="blocProgram">                              
                                 {program.scene[1].groups.map((group, index) =>
                                     <div className="groupHour" key={`${group}-${index}`}>
                                         <Link to={`/artists/${group.groupId}`}>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
                                     </div>
                                 )}
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>

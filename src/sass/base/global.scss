@@ -190,7 +190,7 @@
     width: 60vw;
     position: relative;
     right: 0;
-    overflow: hidden;
+    overflow: hidden;border:5px solid purple;
 }
 
 .banGroup {
@@ -282,21 +282,22 @@
     clip-path: polygon(0 0, 100% 100%, 0 100%);
     float: left;
     shape-outside: polygon(0 0, 100% 100%, 0 100%);
-    height: 400px;
-    width: 146px;
-    transform: translate(35px);
+    height: 600px;
+    width: 260x;
+    z-index: 1;background: tomato;
+    background: rgb(250, 228, 186);
 }
 
 .groupHour {
     text-align: left;
     height: 5vh;
     vertical-align: auto;
-    transform: translate(40px);
+    transform: translate(40px);border:1px solid green;
 }
 
 .blocProgram {
     margin-top: 40px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);border:1px solid red;
 }
 
 .imgGroup {
