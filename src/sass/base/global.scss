@@ -1,3 +1,15 @@
+@keyframes selectMenu {
+    0% {
+        border-bottom-width: 1%;
+    }
+    75% {
+        border-bottom-width: 90%;
+    }
+    100% {
+        border-bottom-width: 100%;
+    }
+}
+
 .mainContainer {
     display: flex;
     flex-direction: row;
@@ -48,22 +60,22 @@
     color: white;
     opacity: 0.6;
     font-size: 20px;
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 1%;
     transform: scale(1);
-    transform-origin: left bottom;
-    border-bottom: none;
-    transition: opacity, transform, border-bottom 0.5s ease; 
+    transform-origin: left center;
+    transition: opacity, transform 0.5s ease; 
 
     &--selected {
         opacity: 1;
         transform: scale(1.1);
-        border-bottom: 2px solid #fff;
     }
 
     &:hover {
         cursor: pointer;
         opacity: 1;
         transform: scale(1.1);
-        border-bottom: 2px solid #fff;
+        animation: selectMenu 1s ease;
     }
 }
 
@@ -343,4 +355,15 @@
         opacity: 1;
         color: #fff;
     }
+}
+
+.buttonsNav {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0.4;
+}
+
+.buttonNav {
+    margin: 0 40px;
 }

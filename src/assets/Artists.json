@@ -1,6 +1,7 @@
 [
     {
         "id": "202506121900A",
+        "codeId": 1,
         "name": "The Harrold's Kids",
         "country": "scotland",
         "codeCountry": "SCO",
@@ -19,6 +20,7 @@
     },
     {
         "id": "202506122100A",
+        "codeId": 2,
         "name": "Sons of Music",
         "country": "great britain",
         "codeCountry": "GBR",
@@ -37,6 +39,7 @@
     },
     {
         "id": "202506122100B",
+        "codeId": 6,
         "name": "Thundertruck Rebels",
         "country": "canada",
         "codeCountry": "CAN",
