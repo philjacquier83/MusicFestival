@@ -7,9 +7,8 @@ import '../sass/main.scss'
 
 function Artists() {
 
-    const artist = useArtists()
-    const indexOfArtist = ArtistsList.findIndex(elem => elem.id === artist.id)
-
+    const { artist, loading } = useArtists()
+    
     return (
 
         <div className="mainContainer">
@@ -21,7 +20,10 @@ function Artists() {
                 <MainHeader />
 
                 <div className="sections">
-                    
+                    {loading ? 
+                    <div><img src='/src/assets/isLoading.gif' /></div>
+                    :
+                    <>
                     <div className="shape2">
                         <div className="dates">
                             <div className="day">{(artist.id).charAt((artist.id.length) - 1) === 'A' ? 'Orange Scene' : 'Little Talk\'s Scene'}</div>
@@ -51,16 +53,21 @@ function Artists() {
                         </div>
 
                         <div className="buttonsNav">
-                            {indexOfArtist !== 0 &&
-                            
-                                <Link to={`/artists/${ArtistsList[indexOfArtist - 1].id}`} className="buttonNav">&lt; Previous Group</Link>
+                            {ArtistsList.findIndex(elem => elem.id === artist.id) !== 0 ?                            
+                                <Link to={`/artists/${ArtistsList[ArtistsList.findIndex(elem => elem.id === artist.id) - 1].id}`} className="buttonNav">&lt; Previous Group</Link>
+                                :
+                                <div className="buttonNav buttonNav--disabled">&lt; Previous Group</div>
                             }
 
-                            {indexOfArtist !== (ArtistsList.length - 1) &&
-                                <Link to={`/artists/${ArtistsList[indexOfArtist + 1].id}`} className="buttonNav">Next Group &gt;</Link>
+                            {ArtistsList.findIndex(elem => elem.id === artist.id) !== (ArtistsList.length - 1) ?
+                                <Link to={`/artists/${ArtistsList[ArtistsList.findIndex(elem => elem.id === artist.id) + 1].id}`} className="buttonNav">Next Group &gt;</Link>
+                                :
+                                <div className="buttonNav buttonNav--disabled">Next Group &gt;</div>
                             }
                         </div>
                     </div>
+                    </>
+                    }
                 </div>
             </div>
 

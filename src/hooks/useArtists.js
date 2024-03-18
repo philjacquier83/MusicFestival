@@ -6,8 +6,8 @@ function useArtists() {
 
     const { id } = useParams()
     const navigate = useNavigate()
-console.log(id)
-    const [ artists, setArtists ] = useState({
+
+    const [ artist, setArtist ] = useState({
         id: "",
         name: "",
         country: "",
@@ -22,16 +22,37 @@ console.log(id)
         groupImg: ""
     })
 
+    const [ loading, setLoading ] = useState(true)
+
     useEffect(() => {
-        const artist = Artists.find((elem) => elem.id === id)
-        if(!artist) {
-            navigate('/error')
-        } else {
-            setArtists(artist)
+
+        async function fetchData() {
+            try {
+
+                const response = await fetch('/src/assets/Artists.json')
+
+                if(!response.ok) {
+                    throw new Error('Error with datas')
+                }
+
+                const artists = await response.json()
+                const artistDatas = artists.find((elem) => elem.id === id)
+                if(!artistDatas) {
+                    navigate('/error')
+                } else {
+                    setArtist(artistDatas)
+                    setLoading(false)
+                }
+            } catch (error) {
+                console.error('Error with datas: ', error)
+                setLoading(false)
+            }
         }
+
+        fetchData()
     }, [id])
 
-    return artists
+    return { artist, loading }
 }
 
 export default useArtists
