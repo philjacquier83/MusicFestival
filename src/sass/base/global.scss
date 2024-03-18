@@ -10,6 +10,18 @@
     }
 }
 
+@keyframes selectConcert {
+    0% {
+        width: 0;
+    }
+    80% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 .mainContainer {
     display: flex;
     flex-direction: row;
@@ -60,21 +72,23 @@
     color: white;
     opacity: 0.6;
     font-size: 20px;
-    border-bottom: 1px solid #fff;
-    border-bottom-width: 1%;
+    width: fit-content;
+    border-bottom: 0px solid #fff;
     transform: scale(1);
     transform-origin: left center;
-    transition: opacity, transform 0.5s ease; 
+    transition: opacity, border-bottom, transform 0.5s ease; 
 
     &--selected {
         opacity: 1;
         transform: scale(1.1);
+        border-bottom: 1px solid #fff;
     }
 
     &:hover {
         cursor: pointer;
         opacity: 1;
         transform: scale(1.1);
+        border-bottom: 1px solid #fff;
         animation: selectMenu 1s ease;
     }
 }
@@ -129,8 +143,8 @@
 }
 
 .dates {
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
     border-radius: 100px;
     display: flex;
     margin: 70px 0 0 1vw;
@@ -141,14 +155,14 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 2% 0;
-    background: #ffb23f;
+    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     color: white;
     z-index: 2;
     box-shadow: 2px 2px 16px rgba(0,0,0,0.25);
 }
 
 .month {
-    font-size: 5vh;
+    font-size: 3.5vh;
     display: flex;
     flex: 2;
     justify-content: center;
@@ -158,12 +172,28 @@
     text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 
     sup {
-        font-size: 3vh;
+        font-size: 2vh;
+    }
+}
+
+.monthProgram {
+    font-size: 3.5vh;
+    height: 2vh;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+
+    sup {
+        font-size: 2vh;
     }
 }
 
 .day {
-    font-size: 1.5vh;
+    font-size: 1.25vh;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -174,7 +204,7 @@
 }
 
 .concertTime {
-    font-size: 1.5vh;
+    font-size: 1.25vh;
     display: flex;
     flex: 1;   
     box-sizing: border-box;
@@ -198,37 +228,42 @@
     justify-content: center;
     align-items: center;
     font-size: 3vh;
+    transform: skew(20deg);
     box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
 }
 
 .groups {
     width: 60vw;
     position: relative;
-    right: 0;
+    right: 0;z-index:3;
     overflow: hidden;
 }
 
 .banGroup {
     height: 5vh;
     width: 100%;
-    background: #ffb23f;
+    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 10%) 100%);
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
     display: flex;
     justify-content: center;
     align-items: baseline;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    transform: skew(20deg) translate(10px);
 }
 
 .scene {
     height: 5vh;
     width: 100%;
     margin-bottom: 20px;
-    background: #ffb23f;
+    z-index: 2;
+    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
     box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    transform: skew(20deg) translate(10px);
 
     &--little {
         margin-top: 80px;
+        transform: skew(20deg) translate(120px);
     }
 }
 
@@ -239,15 +274,14 @@
     justify-content: space-between;
     position: relative;
     margin-top: 20px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
 }
 
 .descriptionPresentation {
     width: 400px;
-    display: flex;
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    float: left;
     overflow: hidden;
     position: relative;
+    transform: skew(20deg) translate(80px);
     
 }
 
@@ -255,7 +289,11 @@
     color: #000;
     flex: 1;
     text-align: justify;
-    margin: 0 20px;
+    margin: 0 40px;
+}
+
+.textGroup2 {
+    margin-bottom: 20px;
 }
 
 .title {
@@ -268,9 +306,11 @@
 }
 
 .titleBanGroup {
-    width: 100%;
+    width: fit-content;
+    margin: auto;
     text-align: center;
     font-size: 3vh;
+    transform: skew(-20deg);
 }
 
 .description {
@@ -290,7 +330,7 @@
     z-index: 1;
     shape-outside: polygon(0 0, 0 100%, 100% 100%);
     transform: skew(20deg) translate(160px);
-    background: rgb(250, 228, 186);
+    background: transparent;
 }
 
 .shape2 {
@@ -298,10 +338,10 @@
     height: 85vh;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
     shape-outside: polygon(0 0, 0 100%, 100% 100%);
-    transform: skew(20deg) translate(160px);
-    background: rgb(250, 228, 186);
+    transform: skew(20deg) translate(165px);
+    background: transparent;
 }
 
 .shape3 {
@@ -310,36 +350,74 @@
     shape-outside: polygon(0 0, 100% 100%, 0 100%);
     height: 800px;
     width: 292px;
-    transform: translate(10px);
 }
 
 .groupHour {
     text-align: left;
     height: 5vh;
+    flex: 1;
     vertical-align: auto;
     line-height: 5vh;
-    transform: translate(20px) scale(1);
+    color: black;
+    transform: skew(20deg) translate(20px) scale(1);
     transition: transform 0.5s ease;
-
+    z-index: 0;
+    
     &:hover {
-        transform: translate(60px) scale(1.1);
+        transform: skew(20deg) translate(60px) scale(1.1);
+        color: #fff;
         cursor: pointer;
+        box-shadow: none;
+        text-shadow: none;
+        font-weight: 500;
     }
 }
 
-.blocProgram {
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+.groupHourText {
+    z-index: 1;
+    transform: skew(0deg);
+    border: 1px solid darken($color: #ffb23f, $amount: 25%);
+    color: darken($color: #ffb23f, $amount: 25%);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    position: relative;
+
+    &:hover {
+        color: #000;
+        text-shadow: 1px 1px 4px darken($color: #ffb23f, $amount: 25%);
+        
+    }
+
+    &:hover::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        right:0;
+        bottom:0;
+        z-index: -1;
+        background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 25%) 100%);
+        animation: selectConcert 0.5s ease-in-out;
+    }
 }
 
 .imgGroup {
-    width: 450px;
-    height: 35vh;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    width: 380px;
+    height: 30vh;
+    position: relative;
     overflow: hidden;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    transform: skew(-20deg) translate(-80px);
+
 
     img {
-        height: 35vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         border-left: 1px solid transparent;
+        object-fit: cover;
     }
 }
 
@@ -349,7 +427,7 @@
     margin: 0 15px;
     text-shadow: 4px 4px 16px rgba(0,0,0,0.25);
     transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.75;
     transition: transform, opacity 0.5s ease;
 
     &:hover {
@@ -359,18 +437,42 @@
     }
 }
 
+.dateLinkDisabled {
+    color: #fff;
+    font-size: 2.75vh;
+    margin: 0 15px;
+    text-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    transform: scale(1);
+    opacity: 0.2;
+    transition: transform, opacity 0.5s ease;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
 .buttonsNav {
     display: flex;
     justify-content: center;
     margin-top: 60px;
-    opacity: 0.4;
 }
 
 .buttonNav {
     margin: 0 40px;
+    color: #000;
+    opacity: 0.3;
+
+    &:hover {        
+        opacity: 1;
+    }
 
     &--disabled {
-        opacity: 0.4;
+        opacity: 0.1;
+
+        &:hover {
+            cursor: default;
+            opacity: 0.1;
+        }
     }
 }
 
@@ -383,7 +485,7 @@
     color: white;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
     box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
-    background: #ffb23f;
+    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     border-radius: 10px;
     margin: 0 60px;
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
@@ -394,7 +496,7 @@
         cursor: pointer;
         box-shadow: none;
         text-shadow: none;
-        background-color: rgb(250, 228, 186);
+        background: none;
         color: darken($color: #ffb23f, $amount: 25%);
         font-weight: 500;
         transform: skew(-20deg) scale(0.95);

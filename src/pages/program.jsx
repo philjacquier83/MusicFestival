@@ -24,8 +24,17 @@ function Programmation() {
 
                     <div className="shape2">
                         <div className="dates">
-                            <div className="month">June</div>
-                            <div className="month">{program.concertDay != 12 && <Link to={`/program/202506${Number(program.concertDay) - 1}`} className="dateLink"><FontAwesomeIcon icon={faAngleLeft} className="prevNext" /></Link>} {program.concertDay}th {program.concertDay != 16 && <Link to={`/program/202506${Number(program.concertDay) + 1}`} className="dateLink"><FontAwesomeIcon icon={faAngleRight} className="prevNext" /></Link>}</div>
+                            <div className="day">{program.concertDay == 12 ? 'TUESDAY' : program.concertDay == 13 ? 'WEDNESDAY' : program.concertDay == 14 ? 'THURSDAY' : program.concertDay == 15 ? 'FRIDAY' : 'SATURDAY'}</div>
+                            <div className="monthProgram">June</div>
+                            <div className='monthProgram'>{program.concertDay != 12 ? 
+                                <Link to={`/program/202506${Number(program.concertDay) - 1}`} className="dateLink"><FontAwesomeIcon icon={faAngleLeft} className="prevNext" /></Link> :
+                                <div className="dateLinkDisabled"><FontAwesomeIcon icon={faAngleLeft} className="prevNext" /></div>} 
+                                {program.concertDay}<sup>th</sup> 
+                                {program.concertDay != 16 ? 
+                                <Link to={`/program/202506${Number(program.concertDay) + 1}`} className="dateLink"><FontAwesomeIcon icon={faAngleRight} className="prevNext" /></Link> :
+                                <div className="dateLinkDisabled"><FontAwesomeIcon icon={faAngleRight} className="prevNext" /></div>
+                                }
+                                </div>
                         </div>
                     </div>
 
@@ -40,17 +49,17 @@ function Programmation() {
 
                             {program.scene[0].groups.map((group, index) =>
                                 <div className="groupHour" key={`${group}-${index}`}>
-                                    <Link to={`/artists/${group.groupId}`}>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
+                                    <Link to={`/artists/${group.groupId}`}><span className='groupHourText'>{group.concertTime}  -  {group.groupName} ({group.country})</span></Link>
                                 </div>
                             )}
 
                             <div className="scene scene--little">
                                 <div className="titleBanGroup">{program.scene[1].sceneName}</div>
                             </div>
-
+                            
                             {program.scene[1].groups.map((group, index) =>
                                 <div className="groupHour" key={`${group}-${index}`}>
-                                    <Link to={`/artists/${group.groupId}`}>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
+                                    <Link to={`/artists/${group.groupId}`} className='groupHourText'>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
                                 </div>
                             )}
                         </div>

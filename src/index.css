@@ -6,11 +6,28 @@
   color-scheme: light dark;
   color: #000;
   background-color: rgb(250, 228, 186);
+  position: relative;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/assets/Crew2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.2;
 }
 
 a {

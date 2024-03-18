@@ -18,8 +18,9 @@ function Home() {
                     
                     <div className="shape"></div>
                     <div className="presentation">
-                        <div className="ban">Welcome to the 7th edition !</div>
-                        
+                        <div className="scene">
+                            <div className="titleBanGroup">Welcome to the 7th edition !</div>
+                        </div>
                         <div className="blocPresentation">
                             <div className="descriptionPresentation">
                                 
