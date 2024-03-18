@@ -49,7 +49,7 @@ function Programmation() {
 
                             {program.scene[0].groups.map((group, index) =>
                                 <div className="groupHour" key={`${group}-${index}`}>
-                                    <Link to={`/artists/${group.groupId}`}><span className='groupHourText'>{group.concertTime}  -  {group.groupName} ({group.country})</span></Link>
+                                    <Link to={`/artists/${group.groupId}`} className='groupHourText'>{group.concertTime}  -  {group.groupName} ({group.country})</Link>
                                 </div>
                             )}
 
