@@ -1,7 +1,7 @@
 [
     {
         "id": "20250612",
-        "concertDay": "12th",
+        "concertDay": "12",
         "scene": [
             {
                 "sceneName": "Orange Scene",
@@ -59,7 +59,7 @@
     },
     {
         "id": "20250613",
-        "concertDay": "13th",
+        "concertDay": "13",
         "scene": [
             {
                 "sceneName": "Orange Scene",
@@ -117,7 +117,7 @@
     },
     {
         "id": "20250614",
-        "concertDay": "14th",
+        "concertDay": "14",
         "scene": [
             {
                 "sceneName": "Orange Scene",
@@ -175,7 +175,7 @@
     },
     {
         "id": "20250615",
-        "concertDay": "15th",
+        "concertDay": "15",
         "scene": [
             {
                 "sceneName": "Orange Scene",
@@ -233,7 +233,7 @@
     },
     {
         "id": "20250616",
-        "concertDay": "16th",
+        "concertDay": "16",
         "scene": [
             {
                 "sceneName": "Orange Scene",

@@ -9,7 +9,7 @@ function MenusList({ menuSelected }) {
             <div className="menusContainer">
                 <div className="menusList">
                     {menus.map((menu, index) =>
-                        <Link to={`/${menu !== 'Home' && menu.toLowerCase()}`} className={`menu ${menu === menuSelected && 'menu--selected'}`} key={`${menu}-${index}`}>{menu}</Link>
+                        <Link to={`/${menu === 'Program' ? 'program/20250612' : menu!== 'Home' && menu.toLowerCase()}`} className={`menu ${menu === menuSelected && 'menu--selected'}`} key={`${menu}-${index}`}>{menu}</Link>
                     )}
                 </div>
             </div>

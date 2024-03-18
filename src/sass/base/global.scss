@@ -36,38 +36,39 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100%;
-    transform: skew(-20deg) translate(15vw);
+    width: fit-content;
+    transform: skew(-20deg);
+    margin-left: 15vw;
 }
 
 .menu {
-    margin: 3vh 2vw;
+    margin: 3vh 20px;
     display: flex;
     justify-content: left;
-    box-sizing: content-box;
     color: white;
     opacity: 0.6;
     font-size: 20px;
     transform: scale(1);
-    transform-origin: left center;
-    transition: opacity 0.5s ease transform 0.5 ease; 
+    transform-origin: left bottom;
+    border-bottom: none;
+    transition: opacity, transform, border-bottom 0.5s ease; 
 
     &--selected {
         opacity: 1;
-        transform: scale(1.4);
+        transform: scale(1.1);
+        border-bottom: 2px solid #fff;
     }
 
     &:hover {
         cursor: pointer;
         opacity: 1;
-        transform: scale(1.4);
+        transform: scale(1.1);
+        border-bottom: 2px solid #fff;
     }
 }
 
 .groupFrom {
     font-size: 1.75vh;
-    display: flex;
-    align-items: baseline;
     margin-left: 10px;
 }
 
@@ -190,7 +191,7 @@
     width: 60vw;
     position: relative;
     right: 0;
-    overflow: hidden;border:5px solid purple;
+    overflow: hidden;
 }
 
 .banGroup {
@@ -202,6 +203,19 @@
     justify-content: center;
     align-items: baseline;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.scene {
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #ffb23f;
+    border: 2px solid darken($color: #ffb23f, $amount: 25%);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+
+    &--little {
+        margin-top: 80px;
+    }
 }
 
 .blocPresentation {
@@ -241,9 +255,7 @@
 
 .titleBanGroup {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    text-align: center;
     font-size: 3vh;
 }
 
@@ -282,22 +294,27 @@
     clip-path: polygon(0 0, 100% 100%, 0 100%);
     float: left;
     shape-outside: polygon(0 0, 100% 100%, 0 100%);
-    height: 600px;
-    width: 260x;
-    z-index: 1;background: tomato;
-    background: rgb(250, 228, 186);
+    height: 800px;
+    width: 292px;
+    transform: translate(10px);
 }
 
 .groupHour {
     text-align: left;
     height: 5vh;
     vertical-align: auto;
-    transform: translate(40px);border:1px solid green;
+    line-height: 5vh;
+    transform: translate(20px) scale(1);
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: translate(60px) scale(1.1);
+        cursor: pointer;
+    }
 }
 
 .blocProgram {
-    margin-top: 40px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);border:1px solid red;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
 }
 
 .imgGroup {
@@ -309,5 +326,21 @@
     img {
         height: 35vh;
         border-left: 1px solid transparent;
+    }
+}
+
+.dateLink {
+    color: #fff;
+    font-size: 2.75vh;
+    margin: 0 15px;
+    text-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    transform: scale(1);
+    opacity: 0.5;
+    transition: transform, opacity 0.5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        color: #fff;
     }
 }

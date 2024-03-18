@@ -20,10 +20,10 @@ function Artists() {
                 <div className="sections">
                     
                     <div className="shape2"><div className="dates">
-                                <div className="day">{artist.groupDate.dayName}</div>
+                                <div className="day">{(artist.id).charAt((artist.id.length) - 1) === 'A' ? 'Orange Scene' : 'Little Talk\'s Scene'}</div>
                                 <div className="month">{artist.groupDate.month}</div>
                                 <div className="month">{artist.groupDate.day}<sup>th</sup></div>
-                                <div className="concertTime">{artist.groupDate.hour}</div>
+                                <div className="concertTime">{artist.groupDate.dayName} {artist.groupDate.hourStart}</div>
                             </div></div>
                     <div className="groups">
                         <div className="banGroup">

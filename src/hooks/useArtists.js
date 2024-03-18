@@ -17,9 +17,7 @@ console.log(id)
             dayName: "",
             month: "",
             dayNum: "",
-            hour: "",
-            hourStart: "",
-            hourEnd: ""
+            hourStart: ""
         },
         groupImg: ""
     })
