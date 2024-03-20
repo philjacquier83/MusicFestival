@@ -2,9 +2,11 @@
     0% {
         border-bottom-width: 1%;
     }
+
     75% {
         border-bottom-width: 90%;
     }
+
     100% {
         border-bottom-width: 100%;
     }
@@ -14,9 +16,15 @@
     0% {
         width: 0;
     }
+
+    75% {
+        width: 85%;
+    }
+
     80% {
         width: 90%;
     }
+
     100% {
         width: 100%;
     }
@@ -76,7 +84,7 @@
     border-bottom: 0px solid #fff;
     transform: scale(1);
     transform-origin: left center;
-    transition: opacity, border-bottom, transform 0.5s ease; 
+    transition: opacity, border-bottom, transform 0.5s ease;
 
     &--selected {
         opacity: 1;
@@ -158,7 +166,7 @@
     background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     color: white;
     z-index: 2;
-    box-shadow: 2px 2px 16px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.25);
 }
 
 .month {
@@ -169,7 +177,7 @@
     align-items: center;
     box-sizing: border-box;
     -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 
     sup {
         font-size: 2vh;
@@ -185,7 +193,7 @@
     align-items: center;
     box-sizing: border-box;
     -webkit-text-stroke: 1px darken($color: #ffb23f, $amount: 25%);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 
     sup {
         font-size: 2vh;
@@ -200,20 +208,20 @@
     justify-content: center;
     flex: 1;
     box-sizing: border-box;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .concertTime {
     font-size: 1.25vh;
     display: flex;
-    flex: 1;   
+    flex: 1;
     box-sizing: border-box;
     align-items: center;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .presentation {
-    width: 70vw;    
+    width: 70vw;
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -229,13 +237,14 @@
     align-items: center;
     font-size: 3vh;
     transform: skew(20deg);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .groups {
     width: 60vw;
     position: relative;
-    right: 0;z-index:3;
+    right: 0;
+    z-index: 3;
     overflow: hidden;
 }
 
@@ -247,7 +256,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
     transform: skew(20deg) translate(10px);
 }
 
@@ -258,7 +267,7 @@
     z-index: 2;
     background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
     transform: skew(20deg) translate(10px);
 
     &--little {
@@ -282,7 +291,7 @@
     overflow: hidden;
     position: relative;
     transform: skew(20deg) translate(80px);
-    
+
 }
 
 .textPresentation {
@@ -321,7 +330,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     position: relative;
-    
+
 }
 
 .shape {
@@ -362,7 +371,7 @@
     transform: skew(20deg) translate(20px) scale(1);
     transition: transform 0.5s ease;
     z-index: 0;
-    
+
     &:hover {
         transform: skew(20deg) translate(60px) scale(1.1);
         color: #fff;
@@ -389,13 +398,13 @@
     &:hover::after {
         content: '';
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
-        right:0;
-        bottom:0;
+        right: 0;
+        bottom: 0;
         z-index: -1;
         background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 25%) 100%);
-        animation: selectConcert 0.5s ease-in-out;
+        animation: selectConcert 1s ease;
     }
 }
 
@@ -404,7 +413,7 @@
     height: 30vh;
     position: relative;
     overflow: hidden;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
     transform: skew(-20deg) translate(-80px);
 
 
@@ -423,7 +432,7 @@
     color: #fff;
     font-size: 2.75vh;
     margin: 0 15px;
-    text-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
     transform: scale(1);
     opacity: 0.75;
     transition: transform, opacity 0.5s ease;
@@ -439,7 +448,7 @@
     color: #fff;
     font-size: 2.75vh;
     margin: 0 15px;
-    text-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
     transform: scale(1);
     opacity: 0.2;
     transition: transform, opacity 0.5s ease;
@@ -460,7 +469,7 @@
     color: #000;
     opacity: 0.3;
 
-    &:hover {        
+    &:hover {
         opacity: 1;
     }
 
@@ -481,8 +490,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
     background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     border-radius: 10px;
     margin: 0 60px;
