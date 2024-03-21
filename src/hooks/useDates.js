@@ -16,20 +16,26 @@ function useDates() {
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     },
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     },
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     }
                 ]
             },
@@ -39,20 +45,26 @@ function useDates() {
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     },
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     },
                     {
                         groupId: "",
                         groupName: "",
+                        groupImg: "",
                         country: "",
-                        concertTime: ""
+                        concertTime: "",
+                        description: []
                     }
                 ]
             }

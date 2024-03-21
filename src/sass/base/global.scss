@@ -30,6 +30,16 @@
     }
 }
 
+@keyframes selectSceneToRight {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(100%);
+    }
+}
+
 .mainContainer {
     display: flex;
     flex-direction: row;
@@ -40,14 +50,12 @@
 .menusContainer {
     color: #000;
     font-size: 2.5vh;
-    width: 38vw;
+    width: 12vw;
     height: 100vh;
-    background: #ffb23f;
+    background: linear-gradient(rgba(247, 196, 155, 0.75) 25%, rgba(253, 185, 97, 0.75) 100%);
     z-index: 1;
     position: fixed;
     top: 0;
-    transform: skew(20deg) translate(-15vw);
-    border-right: 2px solid darken($color: #ffb23f, $amount: 25%);
 }
 
 .bodyContainer {
@@ -56,7 +64,7 @@
     justify-content: left;
     flex: 1;
     z-index: 0;
-    padding: 0 0 0 20vw;
+    padding: 0 0 0 15vw;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -69,19 +77,17 @@
     justify-content: center;
     height: 100vh;
     width: fit-content;
-    transform: skew(-20deg);
-    margin-left: 15vw;
 }
 
 .menu {
     margin: 3vh 20px;
     display: flex;
     justify-content: left;
-    color: white;
+    color: darken($color: #ffb23f, $amount: 25%);
     opacity: 0.6;
     font-size: 20px;
     width: fit-content;
-    border-bottom: 0px solid #fff;
+    border-bottom: 0px solid darken($color: #ffb23f, $amount: 25%);
     transform: scale(1);
     transform-origin: left center;
     transition: opacity, border-bottom, transform 0.5s ease;
@@ -89,14 +95,14 @@
     &--selected {
         opacity: 1;
         transform: scale(1.1);
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid darken($color: #ffb23f, $amount: 25%);
     }
 
     &:hover {
         cursor: pointer;
         opacity: 1;
         transform: scale(1.1);
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid darken($color: #ffb23f, $amount: 25%);
         animation: selectMenu 1s ease;
     }
 }
@@ -112,7 +118,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transform: skew(20deg);
 }
 
 .sections {
@@ -152,18 +157,14 @@
 
 .dates {
     width: 240px;
-    height: 240px;
-    border-radius: 100px;
+    height: 160px;
+    border-radius: 20px;
+    margin: 10px 40px 0 0;
     display: flex;
-    margin: 70px 0 0 1vw;
-    transform: skew(-20deg) rotate(-20deg) translate(-35px, -70px);
     box-sizing: border-box;
     border: 3px solid darken($color: #ffb23f, $amount: 25%);
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 2% 0;
-    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     color: white;
     z-index: 2;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.25);
@@ -186,9 +187,8 @@
 
 .monthProgram {
     font-size: 3.5vh;
-    height: 2vh;
     display: flex;
-    flex: 2;
+    height: 60px;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -204,9 +204,12 @@
     font-size: 1.25vh;
     font-weight: 500;
     display: flex;
+    border-radius: 17px 17px 0 0;
+    width: 100%;
+    height: 40px;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
     box-sizing: border-box;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
@@ -236,13 +239,13 @@
     justify-content: center;
     align-items: center;
     font-size: 3vh;
-    transform: skew(20deg);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .groups {
-    width: 60vw;
+    flex: 1;
     position: relative;
+    margin-left: 120px;
     right: 0;
     z-index: 3;
     overflow: hidden;
@@ -257,23 +260,18 @@
     justify-content: center;
     align-items: baseline;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-    transform: skew(20deg) translate(10px);
 }
 
 .scene {
     height: 5vh;
     width: 100%;
-    margin-bottom: 20px;
-    z-index: 2;
-    background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
-    border: 2px solid darken($color: #ffb23f, $amount: 25%);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    position: relative;
+    border-radius: 20px 0 0 20px;
+    border: 3px solid darken($color: #ffb23f, $amount: 25%);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-    transform: skew(20deg) translate(10px);
-
-    &--little {
-        margin-top: 80px;
-        transform: skew(20deg) translate(120px);
-    }
 }
 
 .blocPresentation {
@@ -315,11 +313,63 @@
 }
 
 .titleBanGroup {
-    width: fit-content;
+    width: 50%;
     margin: auto;
     text-align: center;
-    font-size: 3vh;
-    transform: skew(-20deg);
+    font-size: 2.5vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    justify-content: center;
+    color: darken($color: #ffb23f, $amount: 25%);
+    opacity: 0.2;
+    z-index: 2;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    &:first-child:hover::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        border-radius: 17px;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
+        animation: selectSceneToRight 0.5s ease reverse forwards;
+    }
+
+    &:last-child:hover::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        border-radius: 17px;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
+        animation: selectSceneToRight 0.5s ease forwards;
+    }
+
+    &--selected {
+        opacity: 1;
+        background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
+
+        &:hover {
+            cursor: default;
+
+            &::after {
+                animation: none;
+                display: none;
+            }
+        }
+    }
 }
 
 .description {
@@ -331,34 +381,6 @@
     box-sizing: border-box;
     position: relative;
 
-}
-
-.shape {
-    width: 200px;
-    height: 85vh;
-    z-index: 1;
-    shape-outside: polygon(0 0, 0 100%, 100% 100%);
-    transform: skew(20deg) translate(160px);
-    background: transparent;
-}
-
-.shape2 {
-    width: 400px;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    shape-outside: polygon(0 0, 0 100%, 100% 100%);
-    transform: skew(20deg) translate(165px);
-    background: transparent;
-}
-
-.shape3 {
-    clip-path: polygon(0 0, 100% 100%, 0 100%);
-    float: left;
-    shape-outside: polygon(0 0, 100% 100%, 0 100%);
-    height: 800px;
-    width: 292px;
 }
 
 .groupHour {
@@ -496,7 +518,7 @@
     border-radius: 10px;
     margin: 0 60px;
     border: 2px solid darken($color: #ffb23f, $amount: 25%);
-    transform: skew(-20deg) scale(1);
+    transform: scale(1);
     transition: transform 0.5s ease-in-out;
 
     &:hover {
@@ -506,6 +528,94 @@
         background: none;
         color: darken($color: #ffb23f, $amount: 25%);
         font-weight: 500;
-        transform: skew(-20deg) scale(0.95);
+        transform: scale(0.95);
     }
+}
+
+.listGroups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.groupCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    height: 280px;
+    margin: 20px 0;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid darken($color: #ffb23f, $amount: 25%);
+    opacity: 0.8;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+
+    &--littleScene {
+        width: 192px;
+        height: 224px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+.groupImg {
+    width: calc(100% - 2px);
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid darken($color: #ffb23f, $amount: 10%);
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        object-position: center center;
+        object-fit: cover;
+    }
+}
+
+.groupInfos {
+    width: calc(100% - 2px);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#f7c49b 25%, #fdb961 100%);
+    border-radius: 0 0 8px 8px;
+    border: 1px solid darken($color: #f8af74, $amount: 10%);
+}
+
+.groupName {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    &--littleScene {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.groupDate {
+    display: flex;
+    flex: 1;
+    font-size: 12px;
 }

@@ -9,20 +9,38 @@
                     {
                         "groupId": "202506121900A",
                         "groupName": "The Harrold's Kids",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "scotland",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506122100A",
                         "groupName": "Sons of Music",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "great britain",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506122300A",
                         "groupName": "Anartchie",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             },
@@ -32,26 +50,50 @@
                     {
                         "groupId": "202506121700B",
                         "groupName": "Ways of Silence",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "australia",
-                        "concertTime": "5:00 pm"
+                        "concertTime": "5:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506121900B",
                         "groupName": "Midnight Echoes",
+                        "groupImg": "/src/assets/Group6.png",
                         "country": "australia",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506122100B",
                         "groupName": "Thunderstruck Rebels",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "canada",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506122300B",
                         "groupName": "Neon Skyline",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             }
@@ -67,20 +109,38 @@
                     {
                         "groupId": "202506131900A",
                         "groupName": "Velvet Undergrounders",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "united states",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506132100A",
                         "groupName": "Electric Dreamers",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "great britain",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506132300A",
                         "groupName": "Solar Flares",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "canada",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             },
@@ -90,26 +150,50 @@
                     {
                         "groupId": "202506131700B",
                         "groupName": "Echo Chamber Heroes",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "new zealand",
-                        "concertTime": "5:00 pm"
+                        "concertTime": "5:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506131900B",
                         "groupName": "Gravity Groovers",
+                        "groupImg": "/src/assets/Group6.png",
                         "country": "spain",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506132100B",
                         "groupName": "Sonic Serenity",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "canada",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506132300B",
                         "groupName": "Crystal Sparks",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             }
@@ -125,20 +209,38 @@
                     {
                         "groupId": "202506141900A",
                         "groupName": "Crimson Sky",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "scotland",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506142100A",
                         "groupName": "Electric Horizon",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "great britain",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506142300A",
                         "groupName": "Midnight Echoes",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             },
@@ -148,26 +250,50 @@
                     {
                         "groupId": "202506141700B",
                         "groupName": "Velvet Fury",
+                        "groupImg": "/src/assets/Group6.png",
                         "country": "australia",
-                        "concertTime": "5:00 pm"
+                        "concertTime": "5:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506141900B",
                         "groupName": "Silver Serenade",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "france",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506142100B",
                         "groupName": "Cosmic Pulse",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "jamaica",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506142300B",
                         "groupName": "Neon Shetter",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             }
@@ -183,20 +309,38 @@
                     {
                         "groupId": "202506151900A",
                         "groupName": "Phoenix Reign",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "scotland",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506152100A",
                         "groupName": "Lunar Eclipse",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "great britain",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506152300A",
                         "groupName": "Thunderheart",
+                        "groupImg": "/src/assets/Group6.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             },
@@ -206,26 +350,50 @@
                     {
                         "groupId": "202506151700B",
                         "groupName": "Starlight Symphony",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "australia",
-                        "concertTime": "5:00 pm"
+                        "concertTime": "5:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506151900B",
                         "groupName": "Solar Flare",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "australia",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506152100B",
                         "groupName": "Ivory Rhythms",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "ivory coast",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506152300B",
                         "groupName": "Crimson Cascade",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             }
@@ -241,20 +409,38 @@
                     {
                         "groupId": "202506161900A",
                         "groupName": "Echoes of Eden",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "scotland",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506162100A",
                         "groupName": "Neon Dreamscape",
+                        "groupImg": "/src/assets/Group6.png",
                         "country": "great britain",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506162300A",
                         "groupName": "Midnight Mirage",
+                        "groupImg": "/src/assets/Group1.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             },
@@ -264,26 +450,50 @@
                     {
                         "groupId": "202506161700B",
                         "groupName": "Sonic Serenity",
+                        "groupImg": "/src/assets/Group2.png",
                         "country": "australia",
-                        "concertTime": "5:00 pm"
+                        "concertTime": "5:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506161900B",
                         "groupName": "Aurora Borealis",
+                        "groupImg": "/src/assets/Group3.png",
                         "country": "norway",
-                        "concertTime": "7:00 pm"
+                        "concertTime": "7:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506162100B",
                         "groupName": "Shadow Veil",
+                        "groupImg": "/src/assets/Group4.png",
                         "country": "canada",
-                        "concertTime": "9:00 pm"
+                        "concertTime": "9:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     },
                     {
                         "groupId": "202506162300B",
                         "groupName": "Ruby Riot",
+                        "groupImg": "/src/assets/Group5.png",
                         "country": "united states",
-                        "concertTime": "11:00 pm"
+                        "concertTime": "11:00 pm",
+                        "description": [
+                            "Formed amidst the stunning Highlands of Scotland in 1999, the Harrold's Kids began as a spontaneous collaboration among friends.",
+                            "Their music captures the essence of Scotland's soul. With high-energy stage performances and enchanting melodies, they've captivated hearts worldwide.",
+                            "Over the years, they've etched their mark in Scotland's music history, always striving ton convey the spirit and passion of their homeland through their songs."
+                        ]
                     }
                 ]
             }
