@@ -47,8 +47,8 @@ function Programmation() {
                         <div className="blocProgram">
 
                             <div className="scene">
-                                <div className={`titleBanGroup ${scene == 0 && 'titleBanGroup--selected'}`} onClick={() => handleScene(0)}>{program.scene[0].sceneName}</div>
-                                <div className={`titleBanGroup ${scene != 0 && 'titleBanGroup--selected'}`} onClick={() => handleScene(1)}>{program.scene[1].sceneName}</div>
+                                <div className={`sceneName ${scene == 0 && 'sceneName--selected'}`} onClick={() => handleScene(0)}>{program.scene[0].sceneName}</div>
+                                <div className={`sceneName ${scene != 0 && 'sceneName--selected'}`} onClick={() => handleScene(1)}>{program.scene[1].sceneName}</div>
                             </div>
 
                             <div className="listGroups">

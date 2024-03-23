@@ -30,13 +30,15 @@
     }
 }
 
-@keyframes selectSceneToRight {
+@keyframes selectScene {
     from {
-        transform: translate(0);
+        height: 100%;
+        width: 0;
     }
 
     to {
-        transform: translate(100%);
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -264,8 +266,8 @@
 
 .scene {
     height: 5vh;
-    width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: row;
     margin-bottom: 80px;
     position: relative;
@@ -312,13 +314,13 @@
     font-size: 3vh;
 }
 
-.titleBanGroup {
-    width: 50%;
+.sceneName {
     margin: auto;
     text-align: center;
     font-size: 2.5vh;
     height: 100%;
     display: flex;
+    flex: 1;
     align-items: center;
     border-radius: 17px;
     justify-content: center;
@@ -341,7 +343,7 @@
         top: 0;
         left: 0;
         background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
-        animation: selectSceneToRight 0.5s ease reverse forwards;
+        animation: selectScene 0.5s ease reverse forwards;
     }
 
     &:last-child:hover::after {
@@ -354,12 +356,13 @@
         top: 0;
         left: 0;
         background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
-        animation: selectSceneToRight 0.5s ease forwards;
+        animation: selectScene 0.5s ease forwards;
     }
 
     &--selected {
         opacity: 1;
         background: linear-gradient(#ffb23f 85%, darken($color: #ffb23f, $amount: 20%) 100%);
+        animation: selectScene 0.5s ease forwards;
 
         &:hover {
             cursor: default;
